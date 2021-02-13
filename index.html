@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>マウマウブログ 　|　 つまずいたあなたに！ - Unity</title>
+    <link rel="stylesheet" href="hp-unity.css">
+
+  </head>
+  <body>
+    <div class="header">
+
+      <div class="header-logo">
+  マウマウブログ !!
+      </div>
+      <div class="header-list">
+        <ul>
+          <li>
+            <a href="#">ホーム
+            </a>
+          </li>
+          <li>
+            <a href="#">マウマウブログとは
+            </a>
+          </li>
+          <li>
+            <a href="#">記事一覧
+            </a>
+          </li>
+          <li>
+            <a href="#">トップに戻る
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+
+   <div class="main">
+
+     <h1>Unity 編</h1>
+     <div class="box">
+       <p>1.　オブジェクトが壁を貫通してしまう</p>
+       <p>2.</p>
+     </div>
+     <p>1.　オブジェクトが壁を貫通してしまう</p>
+     <div class="text">
+      <span>原因 1　</span>
+       new Vector3()で移動している。
+       <div class="explain">
+　　　　　new Vector3()はオブジェクトのその座標に動かすという意味です。
+そのため壁があろうがなかろうが必ずその位置へと移動するために貫通してしまいます。
+       </div>
+      <div class="explain">
+        (例 new Vector3(1,0,0)であれば,x座標 1,y座標0,z座標0に移動する  )
+      </div>
+      <div class="last">
+          <span>解決策　</span>
+            RigidbodyコンモーネントのAddforceメソッドを使って物理的に動かす
+      </div>
+
+
+   </div>
+   </div>
+  <div class="footer">
+    <div class="list-fo">
+        <ul>
+
+          <li>意見や質問はこちらから！</li>
+          <li>ホーム</li>
+        </ul>
+      </div>
+      <div class="footer-logo">
+        マウマウブログ
+      </div>
+
+  </div>
+</html>
